@@ -1,0 +1,23 @@
+'''编程实现：
+输入多个由小写字母组成的英文单词，然后按字典顺序排序输出。
+注：单词首字母相同时就比较第二个字母，以此类推。
+输入描述：输入多个由小写字母组成的英文单词，单词之间以一个英文逗号隔开
+输出描述：按字典顺序排序输出，且单词之间以一个英文逗号隔开
+示例一
+输入：
+python,hello,world
+输出：
+hello,python,world
+示例二
+输入：
+banana,apple,pear
+输出：
+apple,banana,pear
+示例三
+输入：
+one,two,three,four
+输出：
+four,one,three,two'''
+ls = input().split(',')
+ls.sort()
+print(','.join(ls))
